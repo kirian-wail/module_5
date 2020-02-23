@@ -1,0 +1,7 @@
+---
+- name: Install and run Nginx using role
+  gather_facts: true
+  hosts: nodes
+  remote_user: root
+  roles:
+    - nginx_site
